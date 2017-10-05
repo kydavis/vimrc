@@ -1,28 +1,3 @@
-"Vundle configuration
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugins:
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
-
-"Required to go together
-"Plugin 'xolox/vim-misc'
-"Plugin 'xolox/vim-easytags'
-
-"Plugin 'valloric/youcompleteme'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
 "Standard configuration
 syntax on
 set number
@@ -113,23 +88,3 @@ nnoremap <leader><C-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " Commands
 
 command! Hexdump %!xxd
-command! LoadCpp %r ~/.vim/templates/Class.cpp
-command! LoadHpp %r ~/.vim/templates/Class.hpp
-
-" -------------------------------------------------
-" vimtemplates ~/.vimrc configuration, by Dr. Beco:
-"
-"	The file path is configurated by:
-let g:VIMFILESDIR="~/.vim/" "_vimtemplates_
-"
-" Template Configuration
-let g:author="Your Name Here" "_vimtemplates_
-let g:email="your@email.here" "_vimtemplates_
-let g:webpage="www.yoursite.com" "_vimtemplates_
-let g:phone="Blaaahhh" "_vimtemplates_
-"
-" If doxygen plugin is installed, you can use:
-"let g:DoxygenToolkit_authorName=g:author "_vimtemplates_
-"
-" -------------------------------------------------
-
